@@ -404,7 +404,7 @@ namespace MaterialComponents.MaterialTextFields
         // @required @property (nonatomic, strong) UIView<MDCTextInput> * _Nullable textInput;
 		[Abstract]
 		[NullAllowed, Export ("textInput", ArgumentSemantic.Strong)]
-		MDCTextInput TextInput { get; set; }
+        MDCTextField TextInput { get; set; }
 
         // @required @property (nonatomic, strong) UIFont * _Null_unspecified trailingUnderlineLabelFont;
         [Abstract]
@@ -439,7 +439,7 @@ namespace MaterialComponents.MaterialTextFields
 		// @required -(instancetype _Nonnull)initWithTextInput:(UIView<MDCTextInput> * _Nullable)input;
 		//[Abstract]
 		[Export ("initWithTextInput:")]
-		IntPtr Constructor ([NullAllowed] MDCTextInput input);
+		IntPtr Constructor ([NullAllowed] MDCTextField input);
 
 		// @required -(void)setErrorText:(NSString * _Nullable)errorText errorAccessibilityValue:(NSString * _Nullable)errorAccessibilityValue;
 		[Abstract]
